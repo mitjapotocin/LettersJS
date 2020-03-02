@@ -1,0 +1,54 @@
+body {
+	margin: 0;
+}
+
+.container,
+.container2,
+.container3 {
+	margin: 0 auto;
+	font-size: 3rem;
+	width: 50%;
+}
+
+.letters-container {
+	text-align: center;
+	font-size: 5rem;
+	font-weight: 700;
+	font-family: 'Arial Black', Gadget, sans-serif;
+	position: relative;
+
+	&:hover {
+		.line {
+			width: 100%;
+		}
+	}
+}
+.letter-wrapper {
+	position: relative;
+	color: rgba(255, 255, 255, 0);
+}
+
+.letter-up,
+.letter-down {
+	position: absolute;
+	left: 0;
+	color: black;
+}
+
+.letter-up {
+	z-index: 3;
+}
+
+.letter-down {
+	z-index: 1;
+}
+
+.line {
+	position: absolute;
+	z-index: 2;
+	width: 0;
+	height: 25px;
+	background: red;
+	top: 48px;
+	transition: width 3s;
+}
