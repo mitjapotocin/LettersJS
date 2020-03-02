@@ -22,7 +22,7 @@
 			});
 
 			wrapper.innerHTML =
-				'<div class="letters-container"><div class="line"></div>' +
+				'<div class="letters-container"><div class="line"></div><div class="line2"></div>' +
 				spanedText.join('') +
 				'</div>';
 		};

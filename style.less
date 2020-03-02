@@ -1,5 +1,6 @@
 body {
 	margin: 0;
+	background: rgb(183, 255, 210);
 }
 
 .container,
@@ -8,31 +9,34 @@ body {
 	margin: 0 auto;
 	font-size: 3rem;
 	width: 50%;
-}
-
-.letters-container {
+	font-family: 'Arial Black', Gadget, sans-serif;
 	text-align: center;
 	font-size: 5rem;
 	font-weight: 700;
-	font-family: 'Arial Black', Gadget, sans-serif;
+	color: rgb(189, 189, 189);
+}
+
+.letters-container {
 	position: relative;
+	user-select: none;
 
 	&:hover {
-		.line {
+		.line,
+		.line2 {
 			width: 100%;
 		}
 	}
 }
 .letter-wrapper {
 	position: relative;
-	color: rgba(255, 255, 255, 0);
+	color: rgba(187, 187, 187, 0);
 }
 
 .letter-up,
 .letter-down {
 	position: absolute;
 	left: 0;
-	color: black;
+	color: rgb(29, 29, 29);
 }
 
 .letter-up {
@@ -44,11 +48,23 @@ body {
 }
 
 .line {
+	display: none;
 	position: absolute;
 	z-index: 2;
 	width: 0;
 	height: 25px;
-	background: red;
+	background: rgba(255, 0, 0);
 	top: 48px;
+	transition: width 3s;
+}
+
+.line2 {
+	position: absolute;
+	z-index: 2;
+	width: 0;
+	height: 25px;
+	background: rgb(128, 60, 255);
+	top: 48px;
+	border-radius: 10px;
 	transition: width 3s;
 }
