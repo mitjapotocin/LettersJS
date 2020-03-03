@@ -1,13 +1,15 @@
 Letters.init({
-	grab: '.container',
+	selector: '.container',
 	lettersOver: []
 });
 
 Letters.init({
-	grab: '.container2',
+	selector: '.container2',
 	lettersOver: [1, 2, 3, 4]
 });
 
 Letters.init({
-	grab: '.container3'
+	selector: '.container3'
 });
+
+Letters.init();

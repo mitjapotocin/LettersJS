@@ -4,6 +4,7 @@ body {
 }
 .container,
 .container2,
+.container4,
 .container3 {
   margin: 0 auto;
   font-size: 3rem;
@@ -46,7 +47,7 @@ body {
   height: 25px;
   background: rgba(255, 0, 0);
   top: 48px;
-  transition: width 3s;
+  transition: width 1.2s;
 }
 .line2 {
   position: absolute;
