@@ -1,5 +1,7 @@
 ### Instructions:
 
+Include letters.js and letters.css in your project.
+
 #### Initialize LettersJS with Letters.init(options)
 
 Options:
@@ -14,7 +16,6 @@ Letters.init({
 	selector: '.yourContainer',
 	lettersOver: [1, 2, 3, 4]
 });
-
 ```
 
 #### Initialize LettersJS with data-LettersJS atribute
