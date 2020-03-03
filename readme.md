@@ -9,7 +9,7 @@ Options:
 -   selector (mandatory)
 -   lettersOver: list of letter that are on top starting with 1 (optional) Default value is every other letter.
 
-##### Example:
+##### JS Example:
 
 ```
 Letters.init({
@@ -20,13 +20,13 @@ Letters.init({
 
 #### Initialize LettersJS with data-LettersJS atribute
 
-HTML:
+##### HTML:
 
 ```
 <div data-LettersJS>SOME TEXT</div>
 ```
 
-JS:
+##### JS:
 
 ```
 Letters.init();
